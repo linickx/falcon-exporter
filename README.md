@@ -4,6 +4,13 @@ Crowdstrike Falcon Exporter for Prometheus
 *Currently only returns the aggregate metrics*
 
 ### Docker Command
+
+Quick Start:
+```
+docker run -p 9122:9122 -e API_USER='example' -e API_PASS='password123' linickx/falcon-exporter
+```
+
+Using a config file and your own CA bundle (*useful if behind an SSL intercepting proxy*):
 ```
 docker run -p 9122:9122 -v /home/nick/falcon-exporter/my.falcon.yml:/etc/falcon-exporter/config.yml -v /home/nick/falcon-exporter/my.ca_bundle.pem:/etc/falcon-exporter/ca.pem linickx/falcon-exporter
 ```
