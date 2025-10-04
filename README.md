@@ -1,4 +1,4 @@
-# falcon-exporter [![Docker Build Status](https://img.shields.io/docker/build/linickx/falcon-exporter.svg)](https://hub.docker.com/r/linickx/falcon-exporter/)
+# falcon-exporter
 Crowdstrike Falcon Exporter for Prometheus
 
 *Currently only returns the aggregate metrics*
